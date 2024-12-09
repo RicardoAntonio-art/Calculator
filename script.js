@@ -1,15 +1,26 @@
-let num1;
-let num2;
+let digits1 = [];
+let digits2 = [];
 let operator;
 
-const buttons = document.querySelectorAll("button");
+const digits = document.querySelectorAll("#digit");
+const operators = document.querySelectorAll("#operator");
 
-buttons.forEach((button) =>{ 
-    button.addEventListener("click",()=>{ 
-    console.log(button.textContent);
+
+operators.forEach((operator) =>{ 
+    operator.addEventListener("click", () => {
+        operator = operator.textContent;
+        console.log(operator);
     });
 });
 
-function operate(num1,num2,operator) { 
+digits.forEach((digits) =>{ 
+    digits.addEventListener("click",()=>{ 
+    let digits1 = digits.textContent;  
+    console.log(digits1);
+    });
+});
+
+
+function operate(digits1,digits22,operator) { 
 
 }
