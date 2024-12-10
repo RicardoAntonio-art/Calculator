@@ -1,52 +1,67 @@
-let digitos = {
-    posicion1: undefined,
-    posicion2: undefined,
-};
+/* let digitos = [];
+let digito1 = digitos[0]
+let calculadora = [];
+let operador = calculadora [0];
+let numero = undefined;
 
-let calculadora = {
-    operaciones: undefined,
-};
-const botones = document.querySelectorAll("#digit");
-const operadores = document.querySelectorAll("#operator")
+const botones1 = document.querySelectorAll("#digit");
+const botones2 = document.querySelectorAll("#digit");
+const operadores = document.querySelectorAll("#operator");
+const resultado = document.querySelector("#equals");
+const pantalla = document.querySelector("#pantalla");
 
+botones1.forEach((botones1) =>{ 
+    botones1.addEventListener("click",()=>{ 
+        digitos[0] = botones1.textContent;
+        digito1 = digitos [0];
+        alert(digito1)
+    });
+});
 
 operadores.forEach( (operadores) => { 
     operadores.addEventListener("click", () =>{ 
-        calculadora.operaciones = operadores.textContent;
-        console.log(calculadora.operaciones);
+        calculadora[0] = operadores.textContent;
+        
     });
 });
 
 
-botones.forEach((botones) =>{ 
-    botones.addEventListener("click",()=>{ 
-        digitos.posicion1 = botones.textContent;
-        console.log(digitos.posicion1);
-    });
+resultado.addEventListener( "click", () => { 
+    alert("funciona")
+    operacion(digito1,operador);
 });
-
 /*
-const operators = document.querySelectorAll("#operator");
-const pantalla = document.querySelector("#pantalla");
-const resultado = document.querySelector("#equals");
-const digitsPAN = document.createElement("p");
-
-
-operators.forEach((operator) =>{ 
-    operator.addEventListener("click", () => {
-        operator = operator.textContent;         
-        console.log(operator);
+botones2.forEach( (botones2) => { 
+    botones2.addEventListener("click", () => {
+        digitos.posicion2 = botones2.textContent;
+        operate(digitos.posicion2)
+        console.log(digitos.posicion2);
     });
 });
+
+
+
+function operacion(digito1,operador) { 
+    let result;
+    switch (operador) {
+        case '+':
+            result = digito1 + 2;
+            console.log(result);
+            break;
+            
+        case '-':
+            result = digito1 - 2;
+            console.log(result);
+            break;
+        case '*':
+            result = digito1 * 2;
+            console.log(result);
+            break;
+        case '/':
+            result = digito1 / 2;
+            console.log(result);
+            break;  
+    }
+    return result;
+}
 */
-
-
-function suma (){ 
-   return digit1+digit2; 
-}
-
-
-
-function operate(digits1,digits22,operator) { 
-
-}
